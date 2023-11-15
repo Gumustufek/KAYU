@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+
+    int N , a , terim1=0 , terim2=1 , terim3;
+
+    printf("Fibonacci sayisinin kac terim olmasini istediğinizi yaziniz: ");
+    scanf("%d", &N);
+
+    printf("Fibonacci serisi: ");
+
+    for(a = 1; a <= N; ++a){
+        printf("%d", terim1);
+        terim3 = terim1 + terim2;
+        terim1 = terim2;
+        terim2 = terim3;
+    }
+
+    return 0;
+}
